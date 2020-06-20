@@ -8,6 +8,7 @@ router.put("/api/workouts/:id", (req, res) => {
 
 })
 
+// creting a new workout
 router.post("/api/workouts", (req, res) => {
 
 })
