@@ -10,7 +10,7 @@ router.get("/api/workouts" , (req, res) => {
     })
     // valdiating
     .catch(err => {
-        res.json(err);
+        res.staus(402).json(err);
     });
 
 })
@@ -29,7 +29,7 @@ router.put("/api/workouts/:id", (req, params, res) => {
         })
         // validating
         .catch(err => {
-            res.json(err);
+            res.status(402).json(err);
         });
 
         function updateWorkout(exercises) {
@@ -61,7 +61,7 @@ router.get(`/api/workouts/range`, (req, res) => {
     })
     // validating
     .catch(err => {
-        res.json(err);
+        res.status(402).json(err);
     });
 });
 
